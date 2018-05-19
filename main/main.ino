@@ -21,7 +21,7 @@ void setup() {
   // Set the speed to start, from 0 (off) to 255 (max speed)
   for(int i = 0; i < MOTOR_COUNT; i++) {
     Serial.println("Init Motor: " + String(i));
-    motors[i].setSpeed(150);
+    motors[i].setSpeed(200);
     motors[i].run(FORWARD);
     motors[i].run(RELEASE);
   }
@@ -41,5 +41,5 @@ void loop() {
     motors[i].run(RELEASE);
   }
   
-  delay(10000);
+  delay(1000 * 60 * 5);
 }
