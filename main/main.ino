@@ -1,3 +1,4 @@
+// Green house 4 motor auto waterer
 #include <Wire.h>
 #include <Adafruit_MotorShield.h>
 
@@ -41,5 +42,5 @@ void loop() {
     motors[i].run(RELEASE);
   }
   
-  delay(1000 * 60 * 5);
+  delay(1000 * 60 * 10);
 }
