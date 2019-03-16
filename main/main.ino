@@ -41,6 +41,11 @@ void loop() {
   for(int i = 0; i < MOTOR_COUNT; i++) {
     motors[i].run(RELEASE);
   }
+
+  long waitTime = 1000L * 60 * 10;
+
+  Serial.print("Delay for: ");
+  Serial.println(waitTime);
   
-  delay(1000 * 60 * 10);
+  delay(waitTime);
 }
